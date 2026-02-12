@@ -65,7 +65,8 @@ const HeroSection = () => {
             Download for MacOS
           </a>
           <a
-            href="#"
+            href="https://emkit-help.vercel.app"
+            target="_blank"
             className="rounded-xl border border-border px-8 py-4 text-base font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-card"
           >
             View Documentation

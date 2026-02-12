@@ -27,10 +27,10 @@ const FooterSection = () => {
             <img src={logo} alt="EM Kit logo" className="h-4" />
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#features" className="hover:text-foreground transition-colors">Features</a>
-            <a href="#privacy" className="hover:text-foreground transition-colors">Privacy</a>
-            <a href="#specs" className="hover:text-foreground transition-colors">Specs</a>
-            <a href="mailto:hello@emkit.dev" className="hover:text-foreground transition-colors">Contact</a>
+            <a href="https://emkit-help.vercel.app" target="_blank" className="hover:text-foreground transition-colors">Documentation</a>
+            <a href="https://emkit-help.vercel.app/terms-policy/privacy-policy/" target="_blank" className="hover:text-foreground transition-colors">Privacy</a>
+            <a href="https://emkit-help.vercel.app/terms-policy/terms-of-service" target="_blank" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="mailto:contact@emkit.app" className="hover:text-foreground transition-colors">Contact</a>
           </nav>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} EM Kit. All rights reserved.
