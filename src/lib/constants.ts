@@ -4,4 +4,4 @@
  */
 export const GITHUB_RELEASES_URL =
   import.meta.env.VITE_GITHUB_RELEASES_URL ??
-  "https://github.com/arnauddb/emkit/releases";
+  "https://github.com/em-kit/emkit-releases/releases";
