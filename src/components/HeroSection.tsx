@@ -16,12 +16,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-3">
           <img src={logo} alt="EM Kit - Local-First Management Tool for Engineering Managers" className="h-8" />
         </div>
-        <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          <a href="#pain-points" className="hover:text-foreground transition-colors">Problems</a>
-          <a href="#features" className="hover:text-foreground transition-colors">Features</a>
-          <a href="#privacy" className="hover:text-foreground transition-colors">Privacy</a>
-          <a href="#specs" className="hover:text-foreground transition-colors">Specs</a>
-        </div>
+        <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground" />
         <a
           href={GITHUB_RELEASES_URL}
           target="_blank"
