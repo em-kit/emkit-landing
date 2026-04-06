@@ -46,7 +46,7 @@ const EmKitCliSection = () => {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="https://emkit-help.vercel.app/command-line-tool-emkit-cli"
+                  href="https://help.app/emkit-cli"
                   className="inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02]"
                 >
                   Read Docs
