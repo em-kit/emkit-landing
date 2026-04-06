@@ -1,32 +1,20 @@
 import { motion } from "framer-motion";
-import { ClipboardList, Monitor, Plane, Database, Terminal, Sparkles } from "lucide-react";
+import { Terminal, Wrench, Bot } from "lucide-react";
 
-const cliFeatures = [
+const integrations = [
   {
-    icon: ClipboardList,
-    title: "Single commands",
-    description: "Run one-shot commands like `emkit member list --workspace-id <id>` for fast scripting and lookups.",
+    name: "Claude Code",
+    logo: "/claude.png",
   },
   {
-    icon: Monitor,
-    title: "Interactive TUI",
-    description: "Use `emkit` or `emkit tui` for an interactive terminal interface with autocomplete and history.",
-  },
-  {
-    icon: Plane,
-    title: "Automatic app runtime",
-    description: "The CLI depends on the EM Kit desktop runtime and automatically launches EM Kit when needed.",
-  },
-  {
-    icon: Database,
-    title: "Local EM Kit domain",
-    description: "Focused on local SQLite-backed EM Kit data and actions.",
+    name: "Codex CLI",
+    logo: "/openai.svg",
   },
 ];
 
 const EmKitCliSection = () => {
   return (
-    <section id="cli" className="section-padding">
+    <section id="ai" className="section-padding">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,84 +31,70 @@ const EmKitCliSection = () => {
             }}
           />
 
-          <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+          <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-                EM Kit CLI
+                AI-Powered
               </p>
-              <div className="mb-4 inline-flex rounded-full border border-primary/30 bg-primary/10 px-3 py-1">
-                <span className="font-mono text-[11px] font-semibold tracking-wider text-primary uppercase">Beta</span>
-              </div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-card-foreground">
-                A local-first command line interface for AI agents and advanced workflows.
+                Give your AI agents full context on your team.
               </h2>
               <p className="mt-5 text-muted-foreground leading-relaxed max-w-xl">
-                EM Kit now ships a standalone desktop CLI that exposes local EM Kit data and actions from the app
-                domain, so agents and power users can move faster with terminal-native workflows. The CLI is currently
-                in beta.
+                EM Kit exposes your local management data through a CLI and an MCP server — letting AI coding agents
+                query your team's context, surface risks, and draft feedback without ever leaving your terminal.
               </p>
 
-              <p className="mt-7 text-sm text-muted-foreground">
-                Install from EM Kit desktop:{" "}
-                <strong className="text-card-foreground">Settings -&gt; Command Line Tool</strong>. Typical macOS
-                location is <code className="text-card-foreground">~/.emkit</code>; make sure it is in your PATH.
-              </p>
-
-              <a
-                href="https://emkit-help.vercel.app/command-line-tool-emkit-cli"
-                className="mt-8 inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02]"
-              >
-                Read CLI Docs
-              </a>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="https://emkit-help.vercel.app/command-line-tool-emkit-cli"
+                  className="inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02]"
+                >
+                  Read Docs
+                </a>
+              </div>
             </div>
 
             <div className="space-y-4">
               <div className="rounded-2xl border border-border bg-secondary/70 p-5">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15">
-                    <Terminal className="h-5 w-5 text-primary" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-card-foreground">Install in-app</p>
-                    <p className="text-xs text-muted-foreground">Settings -&gt; Command Line Tool</p>
-                  </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <Terminal className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                  <p className="text-sm font-semibold text-card-foreground">CLI</p>
                 </div>
-                <div className="mt-4 rounded-lg border border-border bg-card/60 px-3 py-2 font-mono text-xs text-muted-foreground">
-                  ~/.emkit must be in PATH on macOS.
-                </div>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Run <code className="text-card-foreground">emkit</code> commands to script lookups, create feedback, log notes, or manage issues — all backed by your local SQLite data.
+                </p>
               </div>
 
               <div className="rounded-2xl border border-border bg-secondary/70 p-5">
-                <div className="mb-3 flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 text-primary" />
-                  <p className="text-sm font-semibold text-card-foreground">Designed for local reliability</p>
+                <div className="flex items-center gap-3 mb-3">
+                  <Wrench className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                  <p className="text-sm font-semibold text-card-foreground">MCP Server</p>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  The CLI requires the desktop app runtime. If EM Kit is not running, your first CLI command starts it
-                  automatically so local data operations stay seamless.
+                  Expose 39 tools via <code className="text-card-foreground">emkit mcp</code> so AI agents can read and write your EM Kit data through the standard Model Context Protocol.
                 </p>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-secondary/70 p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <Bot className="h-5 w-5 text-primary" strokeWidth={1.5} />
+                  <p className="text-sm font-semibold text-card-foreground">Works with</p>
+                </div>
+                <div className="flex items-center gap-5">
+                  {integrations.map((integration) => (
+                    <div key={integration.name} className="flex items-center gap-2.5">
+                      <img
+                        src={integration.logo}
+                        alt={integration.name}
+                        className="h-7 w-7 rounded-md"
+                      />
+                      <span className="text-sm font-medium text-card-foreground">{integration.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.06 }}
-          className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {cliFeatures.map((feature) => (
-            <article
-              key={feature.title}
-              className="rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/30"
-            >
-              <feature.icon className="h-5 w-5 text-primary" strokeWidth={1.5} />
-              <h3 className="mt-3 text-sm font-semibold text-card-foreground">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
-            </article>
-          ))}
         </motion.div>
       </div>
     </section>
