@@ -3,7 +3,7 @@ import { Monitor, Plug, Database, Shield } from "lucide-react";
 
 const specs = [
   { icon: Monitor, label: "Built for", value: "macOS, Windows, Linux (Electron)" },
-  { icon: Plug, label: "Integrations", value: "GitHub (OAuth/PAT), Jira (Cloud/On-prem)" },
+  { icon: Plug, label: "Integrations", value: "GitHub, Jira, Slack" },
   { icon: Database, label: "Storage", value: "Local SQLite DB + Markdown files" },
   { icon: Shield, label: "Security", value: "100% data residency on your hardware" },
 ];

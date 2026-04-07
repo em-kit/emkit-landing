@@ -65,7 +65,7 @@ const features = [
     title: "Copilot",
     tagline: "Your AI-powered management advisor.",
     description:
-      "Ask about team risks, feedback follow-ups, or performance review prep. Copilot analyzes your workspace data locally to surface insights you'd otherwise miss.",
+      "Ask about team risks, feedback follow-ups, or performance review prep. Copilot analyzes your workspace data locally to surface insights you'd otherwise miss. Run AI automations for recurring actions.",
   },
 ];
 

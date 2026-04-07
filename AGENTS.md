@@ -12,4 +12,9 @@ npm run dev       # Run landing dev server (port 8080)
 
 ## Landing deployment
 
-The landing page is configured for Cloudfare deployment.
+The landing page is deployed to Cloudflare Pages using Wrangler and the `@cloudflare/vite-plugin`.
+
+- **Config**: `wrangler.jsonc` defines the worker name, compatibility settings, and SPA routing (`not_found_handling: "single-page-application"`)
+- **Vite plugin**: `cloudflare()` is included in `vite.config.ts` to integrate the build with Cloudflare
+- **Deploy command**: `npx wrangler deploy` (runs after `npm run build`)
+- **Output directory**: `dist/`
