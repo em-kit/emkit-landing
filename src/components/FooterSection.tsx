@@ -31,6 +31,7 @@ const FooterSection = () => {
             <a href="https://help.emkit.app/terms-policy/privacy-policy/" target="_blank" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="https://help.emkit.app/terms-policy/terms-of-service" target="_blank" className="hover:text-foreground transition-colors">Terms of Service</a>
             <a href="mailto:contact@emkit.app" className="hover:text-foreground transition-colors">Contact</a>
+            <a href="https://discord.com/invite/W6unmDxt" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Discord</a>
           </nav>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} EM Kit. All rights reserved.
