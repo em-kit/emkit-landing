@@ -8,7 +8,7 @@ const integrations = [
   },
   {
     name: "Codex CLI",
-    logo: "/openai.svg",
+    logo: "/openai.png",
   },
 ];
 

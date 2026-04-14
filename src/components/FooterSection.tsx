@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-white.svg";
+import logo from "@/assets/logo.png";
 import { GITHUB_RELEASES_URL } from "@/lib/constants";
 
 const FooterSection = () => {
@@ -24,7 +24,7 @@ const FooterSection = () => {
 
         <div className="flex flex-col items-center justify-between gap-6 border-t border-border pt-8 sm:flex-row">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="EM Kit logo" className="h-4" />
+            <img src={logo} alt="EM Kit logo" className="h-8" />
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
             <a href="https://help.emkit.app" target="_blank" className="hover:text-foreground transition-colors">Documentation</a>
