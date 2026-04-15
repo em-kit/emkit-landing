@@ -5,6 +5,7 @@ import EmKitCliSection from "@/components/EmKitCliSection";
 import PrivacySection from "@/components/PrivacySection";
 import SpecsSection from "@/components/SpecsSection";
 import SocialProofSection from "@/components/SocialProofSection";
+import CtaSection from "@/components/CtaSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <PrivacySection />
       <SpecsSection />
       <SocialProofSection />
+      <CtaSection />
       <FooterSection />
     </main>
   );

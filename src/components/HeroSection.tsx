@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 import hero from "@/assets/emkit-hero.png";
-import { GITHUB_RELEASES_URL } from "@/lib/constants";
 
 const HeroSection = () => {
   return (
@@ -12,9 +11,7 @@ const HeroSection = () => {
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground" />
         <a
-          href={GITHUB_RELEASES_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/download"
           className="rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/85"
         >
           Download
@@ -45,9 +42,7 @@ const HeroSection = () => {
           className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
         >
           <a
-            href={GITHUB_RELEASES_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/download"
             className="rounded-full bg-foreground px-7 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/85"
           >
             Download for macOS
