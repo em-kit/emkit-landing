@@ -79,14 +79,11 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-            Features
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
+          <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
             Built for the way you actually work.
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            People management for tech leads — built with the speed and simplicity you expect from developer tools.
+            Built by an EM, for EMs who believe that great management starts with better context.
           </p>
         </motion.div>
 

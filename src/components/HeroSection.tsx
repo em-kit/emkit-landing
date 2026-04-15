@@ -30,7 +30,7 @@ const HeroSection = () => {
           <h1 className="font-serif text-5xl leading-[1.05] text-foreground sm:text-6xl lg:text-7xl">
             The Engineering Manager's
             <br className="hidden sm:block" />
-            <em className="italic text-foreground/90"> Second Brain.</em>
+            Second Brain.
           </h1>
           <p className="mx-auto mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Prepare 1:1s, write performance reviews, log feedback, and stay close to your team's
@@ -68,6 +68,11 @@ const HeroSection = () => {
           className="mt-16 md:mt-20"
         >
           <div className="relative mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border bg-card shadow-warm">
+            <div className="flex items-center gap-2 border-b border-border bg-secondary/60 px-4 py-3">
+              <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+              <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+              <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+            </div>
             <img
               src={hero}
               alt="EM Kit home — pastel category tiles for team directory, notes, issues, work log, performance reviews and analytics"

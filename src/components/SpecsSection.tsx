@@ -18,10 +18,7 @@ const SpecsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-            Technical Specifications
-          </p>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-foreground">
+          <h2 className="font-serif text-2xl font-bold tracking-tight sm:text-3xl text-foreground">
             Under the hood
           </h2>
         </motion.div>

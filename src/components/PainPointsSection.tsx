@@ -32,10 +32,7 @@ const PainPointsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-            The Problem
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
+          <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
             Stop juggling tabs. Start leading humans.
           </h2>
         </motion.div>

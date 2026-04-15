@@ -11,10 +11,7 @@ const PrivacySection = () => {
           viewport={{ once: true }}
           className="rounded-2xl border border-border bg-card p-10 md:p-16 text-center"
         >
-          <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-            The Local-First Manifesto
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground mb-6">
+          <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl text-foreground mb-6">
             Your data. Your machine. Your peace of mind.
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">

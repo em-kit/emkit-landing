@@ -33,10 +33,7 @@ const EmKitCliSection = () => {
 
           <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <p className="font-mono text-sm tracking-widest text-primary uppercase mb-4">
-                AI-Powered
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-card-foreground">
+              <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl text-card-foreground">
                 Give your AI agents full context on your team.
               </h2>
               <p className="mt-5 text-muted-foreground leading-relaxed max-w-xl">
