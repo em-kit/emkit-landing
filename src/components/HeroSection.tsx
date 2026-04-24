@@ -26,7 +26,7 @@ const HeroSection = () => {
         >
           <h1 className="font-serif text-5xl leading-[1.05] text-foreground sm:text-6xl lg:text-7xl">
             The Engineering Manager's
-            <br className="hidden sm:block" />
+            <br />
             Second Brain.
           </h1>
           <p className="mx-auto mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
